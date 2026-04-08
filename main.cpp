@@ -3,8 +3,13 @@
 
 int main() {
     sjtu::vector<int> v;
-    v.push_back(1);
-    v.push_back(2);
-    std::cout << v.size() << std::endl;
+    int x;
+    while (std::cin >> x) {
+        v.push_back(x);
+    }
+    for (size_t i = 0; i < v.size(); ++i) {
+        std::cout << v[i] << " ";
+    }
+    std::cout << std::endl;
     return 0;
 }
